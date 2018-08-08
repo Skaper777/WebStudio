@@ -1,0 +1,52 @@
+.slider {  
+  .showing {
+    opacity: 1;
+    
+    .slider__slide-overlay {
+      z-index: 100;
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 250px;
+      height: 200px;
+      background: black;
+      opacity: 0;     
+      cursor: pointer;
+
+      &:after {
+        content: "Подробней";
+        font-weight: bold;
+        position: absolute;
+        top: 85px;
+        left: 65px;
+        width: 120px;
+        border: 1px solid @gold;
+      }
+      
+      &:hover {        
+        opacity: 0.6;
+      }  
+    }
+  }  
+
+  li {
+    display: block;
+    position: absolute;
+    left: 35px;    
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-align: center;    
+  }
+
+  img {
+    display: block;
+    margin-top: 7px;
+    width: 250px;
+    height: 200px;    
+  }
+  
+  span {
+    display: block;
+    margin-top: 14px;
+  }
+}

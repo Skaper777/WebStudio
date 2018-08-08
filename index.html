@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <title>1</title>
+    <title>Local Web Studio</title>
   </head>
 
   <body class="page">
@@ -28,7 +28,7 @@
               <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
             </li>            
             <li class="main-nav__list-item">
-              <a class="main-nav__link" href="#projects">Работы</a>
+              <a class="main-nav__link" href="works.html">Работы</a>
             </li>
             <li class="main-nav__list-item">
               <a class="main-nav__link" href="#contacts">Контакты</a>
@@ -36,8 +36,8 @@
           </ul>
           <div class="main-header__title">
             <p class="main-header__title-words">
-              <span>Semenov Sergey</span>
-              <span>Web Developer.</span>
+              <span>Local Web Sudio.</span>
+              <span>Web Development.</span>
             </p>
           </div>
         </nav>
@@ -47,14 +47,14 @@
         <div class="about-me__text">
           <h3>Hello!</h3>
           <p>
-            <span>Меня зовут Семенов Сергей Олегович. Я Front-End разработчик.</span>
-            <span>Занимаюсь разработкой, доработкой сайтов, созданием дизайна для проектов и установкой сайтов на CMS.</span>
+            <span>Привет! Это группа веб студии Local Web Studio.</span>
+            <span>Мы занимаемся разработкой, доработкой сайтов, созданием дизайна для проектов и установкой сайтов на CMS.</span>
             <span>Современные, отвечающие всем стандартам проекты, которые будут приносить вам доход и новых клиентов.</span>
             <span>Быстро. Качественно. Доступно.</span> 
           </p>
         </div>
         <div class="about-me__services services">      
-          <h3>Я предлагаю</h3>
+          <h3>Мы предлагаем</h3>
           <ul class="services__list">
             <li>Создание сайтов с нуля</li>
             <li>Доработки проектов</li>
@@ -95,11 +95,39 @@
         </div>
       </section>
 
+      <section class="works">
+        <h3 class="works__title">Наши работы</h3>
+        <ul class="works__slider slider">
+          <li class="slider__slide showing">
+            <img src="img/nerds.jpg" class="slider__image">
+            <div class="slider__slide-overlay">              
+            </div>
+            <span>Учебный проект "Nerds".</span>
+          </li>
+          <li class="slider__slide">
+            <img src="img/sedona.jpg" class="slider__image">
+            <div class="slider__slide-overlay">              
+            </div>
+            <span>Учебный проект "Sedona".</span>
+          </li>
+          <li class="slider__slide">
+            <img src="img/keksobooking.jpg" class="slider__image">
+            <div class="slider__slide-overlay"></div>              
+            <span>Учебный проект "Кексобукинг".</span>          
+          </li>
+        </ul>
+        <div class="works__controls">
+          <button class="works__controls-left" alt="Назад"></button>
+          <button class="works__controls-right" alt="Вперед"></button>
+        </div>
+        <a href="works.html" class="works__link link">Все работы</a>
+      </section>
+
       <section class="certificates">
 
       </section>
 
-      <section class="works">
+      <section class="order">
 
       </section>
 
@@ -107,11 +135,20 @@
 
       </footer>
 
+      <div class="popup popup__image">
+        
+      </div>
+      <div class="popup popup__image"></div>
+      <div class="popup popup__image">
+        <!--<img src="img/nerds-popup.png"> -->
+      </div>
+
     </div>
 
     <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/popup.js"></script>
 
   </body>
-
   
 </html>

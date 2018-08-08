@@ -410,6 +410,7 @@ template {
   font-family: "NotoSerif-Regular", "NotoSerif-Bold", "Arial", sans-serif;
 }
 .page .page__container {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   background-color: white;
@@ -521,4 +522,157 @@ template {
 .about-me span {
   display: block;
   margin-bottom: 15px;
+}
+.works {
+  min-height: 350px;
+  color: white;
+  background: url(../img/texture-black.png);
+  padding-top: 10px;
+}
+.works .works__title:after {
+  background: white;
+}
+.works .works__slider {
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+.works .works__controls {
+  position: relative;
+  margin-top: 239px;
+  margin-left: 32px;
+}
+.works .works__controls .works__controls-left {
+  border: none;
+  background: none;
+  width: 20px;
+  height: 32px;
+  cursor: pointer;
+}
+.works .works__controls .works__controls-left:hover::after,
+.works .works__controls .works__controls-left:hover::before {
+  background: #deb423;
+}
+.works .works__controls .works__controls-left:after,
+.works .works__controls .works__controls-left:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 20px;
+  background: white;
+  transition: 0.2s;
+}
+.works .works__controls .works__controls-left:before {
+  top: 0px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.works .works__controls .works__controls-left:after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  top: 11px;
+}
+.works .works__controls .works__controls-right {
+  border: none;
+  background: none;
+  width: 20px;
+  height: 32px;
+  margin-left: 209px;
+  cursor: pointer;
+}
+.works .works__controls .works__controls-right:hover::after,
+.works .works__controls .works__controls-right:hover::before {
+  background: #deb423;
+}
+.works .works__controls .works__controls-right:after,
+.works .works__controls .works__controls-right:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 20px;
+  background: white;
+  transition: 0.2s;
+}
+.works .works__controls .works__controls-right:before {
+  top: 11px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.works .works__controls .works__controls-right:after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  top: 0px;
+}
+.works .works__link {
+  display: block;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.slider .showing {
+  opacity: 1;
+}
+.slider .showing .slider__slide-overlay {
+  z-index: 100;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 250px;
+  height: 200px;
+  background: black;
+  opacity: 0;
+  cursor: pointer;
+}
+.slider .showing .slider__slide-overlay:after {
+  content: "Подробней";
+  font-weight: bold;
+  position: absolute;
+  top: 85px;
+  left: 65px;
+  width: 120px;
+  border: 1px solid #deb423;
+}
+.slider .showing .slider__slide-overlay:hover {
+  opacity: 0.6;
+}
+.slider li {
+  display: block;
+  position: absolute;
+  left: 35px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  text-align: center;
+}
+.slider img {
+  display: block;
+  margin-top: 7px;
+  width: 250px;
+  height: 200px;
+}
+.slider span {
+  display: block;
+  margin-top: 14px;
+}
+.catalog {
+  background: white;
+}
+.link {
+  display: block;
+  text-decoration: none;
+  color: #deb423;
+  text-align: center;
+}
+.link:hover {
+  color: white;
+}
+.popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  background: black;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+}
+.popup img {
+  position: fixed;
 }

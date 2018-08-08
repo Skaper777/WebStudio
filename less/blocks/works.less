@@ -1,0 +1,95 @@
+.works {
+  min-height: 350px;
+  color: white;
+  background: url(../img/texture-black.png);
+  padding-top: 10px; 
+  
+  .works__title {
+    &:after {
+      background: white;
+    }
+  }
+
+  .works__slider {
+    position: relative;
+    list-style: none;    
+    padding: 0;
+  }
+
+  .works__controls {
+    position: relative;
+    margin-top: 239px;
+    margin-left: 32px;    
+    
+    .works__controls-left {
+      border: none;
+      background: none;
+      width: 20px;
+      height: 32px;
+      cursor: pointer;
+
+      &:hover::after,
+      &:hover::before {
+        background: @gold;
+      }
+
+      &:after,
+      &:before {
+        position: absolute;
+        content: "";
+        width: 5px;
+        height: 20px;
+        background: white;
+        transition: 0.2s;
+      }
+      
+      &:before {
+        top: 0px;
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(135deg);
+        top: 11px;
+      }
+    }
+
+    .works__controls-right {
+      border: none;
+      background: none;
+      width: 20px;
+      height: 32px;
+      margin-left: 209px;
+      cursor: pointer;
+
+      &:hover::after,
+      &:hover::before {
+        background: @gold;
+      }
+
+      &:after,
+      &:before {
+        position: absolute;        
+        content: "";
+        width: 5px;
+        height: 20px;
+        background: white;
+        transition: 0.2s;        
+      }
+      
+      &:before {
+        top: 11px;
+        transform: rotate(45deg);        
+      }
+      &:after {
+        transform: rotate(135deg);
+        top: 0px;
+      }
+    }
+  }
+
+  .works__link {
+    display: block;
+    margin-top: 10px;
+    padding-bottom: 10px; 
+  }
+}
