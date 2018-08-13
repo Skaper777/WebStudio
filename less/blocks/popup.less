@@ -1,13 +1,48 @@
 .popup {
   display: none;
   position: absolute;
-  top: 0;
-  background: black;
-  opacity: 0.5;
+  top: 0;  
   height: 100%;
   width: 100%;
 
-  img {
+  .popup__overlay {
+    opacity: 0.5;
+    background: black;
+    height: 100%;
+    width: 100%;
+  }
+
+  .popup__close {
     position: fixed;
+    top: 240px;
+    padding: 0;
+    margin-left: 265px;
+    width: 23px;
+    height: 23px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;    
+
+    .popup__cross-icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      fill: white;
+      transition: 0.2s;
+
+      &:hover {
+        fill: @gold;
+      }
+    }
+  }
+
+  img {
+    display: none;
+    z-index: 600;
+    padding-left: 35px;
+    top: 30%;
+    position: fixed;
+    width: 250px;    
   }
 }
