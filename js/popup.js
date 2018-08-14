@@ -12,19 +12,14 @@
       if (overlay === overlays[i]) {
         popup.style = 'display: block';        
         popupImages[i].style = 'display: block';
+      } else {
+        popupImages[i].style = 'display: none';
       }
     }
   };  
 
-  var closePopup = function (e) {
-    var target = e.target;    
-    for (var i = 0; i < popupImages.length; i++) {
-      if (target === popupClose) {
-        popupImages[i].style = 'display: none';
-      }
-    }
-
-    popup.style = 'display: none';
+  var closePopup = function () {    
+    popup.style = 'display: none';   
   }; 
   
   var popupHandler = function () {

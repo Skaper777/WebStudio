@@ -435,7 +435,7 @@ template {
   background: black;
 }
 .button {
-  background: #3f4756;
+  background: #2c2f36;
   width: 320px;
   color: white;
   border: none;
@@ -453,17 +453,12 @@ template {
   background: url(../img/texture-black.png);
   border-bottom: 1px solid #deb423;
 }
-.main-header .main-header__title-words {
-  color: white;
-  margin: 80px auto;
+.main-header .main-header__logo {
+  min-height: 200px;
 }
-.main-header .main-header__title-words span {
-  display: block;
-  line-height: 20px;
-  font-size: 20px;
-}
-.main-header .main-header__title-words span:last-of-type {
-  font-size: 12px;
+.main-header .main-header__logo img {
+  width: 150px;
+  margin-top: 65px;
 }
 .main-nav {
   width: 100%;
@@ -484,7 +479,7 @@ template {
   display: block;
   padding: 14px 0;
   text-decoration: none;
-  background: #3f4756;
+  background: #2c2f36;
   color: white;
   width: 100%;
   border-bottom: 1px solid #deb423;
@@ -528,7 +523,7 @@ template {
   min-height: 350px;
   color: white;
   background: url(../img/texture-black.png);
-  padding-top: 10px;
+  padding-top: 1px;
 }
 .works .works__title:after {
   background: white;
@@ -606,8 +601,10 @@ template {
 }
 .works .works__link {
   display: block;
+  width: 100px;
+  margin: 0 auto;
   margin-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .slider .showing {
   opacity: 1;
@@ -649,9 +646,36 @@ template {
   width: 250px;
   height: 200px;
 }
+.slider .slider__nerds {
+  background: url(../img/nerds.jpg) no-repeat;
+}
+.slider .slider__sedona {
+  background: url(../img/sedona.jpg) no-repeat;
+}
+.slider .slider__keks {
+  background: url(../img/keksobooking.jpg) no-repeat;
+}
 .slider span {
   display: block;
   margin-top: 14px;
+}
+.certificates {
+  padding-top: 10px;
+}
+.certificates .certificates__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.certificates .certificates__image {
+  width: 100px;
+  transition: 0.3s;
+}
+.certificates .certificates__image:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .catalog {
   background: white;
@@ -680,9 +704,9 @@ template {
 }
 .popup .popup__close {
   position: fixed;
-  top: 240px;
+  top: 25%;
   padding: 0;
-  margin-left: 265px;
+  margin-left: 290px;
   width: 23px;
   height: 23px;
   background: transparent;
@@ -703,8 +727,7 @@ template {
 .popup img {
   display: none;
   z-index: 600;
-  padding-left: 35px;
   top: 30%;
   position: fixed;
-  width: 250px;
+  width: 320px;
 }
