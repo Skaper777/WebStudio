@@ -415,7 +415,10 @@ template {
   margin: 0 auto;
   background-color: white;
   border-radius: 15px;
-  border: 4px solid black;
+  border: 3px solid black;
+}
+.page a {
+  text-decoration: none;
 }
 .page ul {
   padding-right: 20px;
@@ -433,6 +436,9 @@ template {
   top: 34px;
   left: 45%;
   background: black;
+}
+.page p {
+  margin: 0 20px;
 }
 .button {
   background: #2c2f36;
@@ -511,9 +517,6 @@ template {
 }
 .main-nav .main-nav__list .main-nav__cross-icon:hover {
   fill: #deb423;
-}
-.about-me .about-me__text {
-  margin: 0 20px;
 }
 .about-me span {
   display: block;
@@ -630,7 +633,7 @@ template {
   border: 1px solid #deb423;
 }
 .slider .showing .slider__slide-overlay:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .slider li {
   display: block;
@@ -660,7 +663,7 @@ template {
   margin-top: 14px;
 }
 .certificates {
-  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .certificates .certificates__list {
   list-style: none;
@@ -676,6 +679,31 @@ template {
 .certificates .certificates__image:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+.footer {
+  background: #2c2f36;
+  border-top: 1px solid #deb423;
+  color: white;
+  padding-bottom: 20px;
+}
+.footer .footer__title {
+  color: white;
+}
+.footer .footer__title::after {
+  background: white;
+}
+.footer .footer__contacts .footer__contacts-item a {
+  color: white;
+  transition: 0.2s;
+}
+.footer .footer__contacts .footer__contacts-item .footer__contacts-gold {
+  color: #deb423;
+}
+.footer .footer__contacts .footer__contacts-item .footer__contacts-gold:hover {
+  color: white;
+}
+.footer .footer__social {
+  list-style: none;
 }
 .catalog {
   background: white;
