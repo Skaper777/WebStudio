@@ -704,6 +704,22 @@ template {
 }
 .footer .footer__social {
   list-style: none;
+  margin-top: 20px;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.footer .footer__social svg {
+  fill: white;
+  transition: 0.2s;
+}
+.footer .footer__social svg:hover {
+  fill: #deb423;
+}
+.footer .footer__copyright {
+  text-align: center;
 }
 .catalog {
   background: white;

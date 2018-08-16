@@ -31,7 +31,24 @@
 
   .footer__social {
     list-style: none;
+    margin-top: 20px;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;  
+    justify-content: space-around;
 
-    
+    svg {
+      fill: white;
+      transition: 0.2s;
+
+      &:hover {
+        fill: @gold;
+      }
+    }
+  }
+
+  .footer__copyright {
+    text-align: center;
   }
 }
