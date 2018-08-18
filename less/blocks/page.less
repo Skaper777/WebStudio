@@ -1,5 +1,5 @@
 .page {
-  font-size: @span-size;
+  font-size: @mobile-font-size;
   min-width: 320px;
   line-height: 25px;
   font-family: "NotoSerif-Regular", "NotoSerif-Bold", "Arial", sans-serif;
@@ -24,7 +24,7 @@
   h3 {
     position: relative;
     text-align: center;
-    font-size: @title-size;
+    font-size: @mobile-title;
 
     &:after {
       content: "";
@@ -39,5 +39,28 @@
   
   p {
     margin: 0 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: @tablet-font-size;
+    
+    .page__container {
+      width: 768px;
+
+      h3 {
+        font-size: @tablet-title;
+        margin: 30px 0;
+
+        &:after {
+          top: 41px;
+          width: 40px;
+          left: 47.6%;
+        }
+      }
+
+      p {
+        margin: 0 6%;
+      }
+    }
   }
 }

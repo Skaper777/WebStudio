@@ -440,6 +440,26 @@ template {
 .page p {
   margin: 0 20px;
 }
+@media (min-width: 768px) {
+  .page {
+    font-size: 14px;
+  }
+  .page .page__container {
+    width: 768px;
+  }
+  .page .page__container h3 {
+    font-size: 22px;
+    margin: 30px 0;
+  }
+  .page .page__container h3:after {
+    top: 41px;
+    width: 40px;
+    left: 47.6%;
+  }
+  .page .page__container p {
+    margin: 0 6%;
+  }
+}
 .button {
   background: #2c2f36;
   width: 320px;
@@ -465,6 +485,17 @@ template {
 .main-header .main-header__logo img {
   width: 150px;
   margin-top: 65px;
+}
+@media (min-width: 768px) {
+  .main-header {
+    background: url(../img/bg-tablet.jpg) no-repeat 50% 30%;
+    border-bottom: 2px solid #deb423;
+  }
+  .main-header .main-header__logo img {
+    width: 100px;
+    margin-top: 105px;
+    margin-bottom: 150px;
+  }
 }
 .main-nav {
   width: 100%;
@@ -518,9 +549,43 @@ template {
 .main-nav .main-nav__list .main-nav__cross-icon:hover {
   fill: #deb423;
 }
+@media (min-width: 768px) {
+  .main-nav .main-nav__list {
+    display: flex;
+  }
+  .main-nav .main-nav__list .main-nav__list-item {
+    padding: 14px 0;
+    width: 33.3%;
+  }
+  .main-nav .main-nav__list .main-nav__link {
+    display: inline;
+    margin: 0 auto;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+  .main-nav .main-nav__list .main-nav__link:hover {
+    color: #deb423;
+    background: none;
+  }
+  .main-nav .main-nav__cross-button {
+    display: none;
+  }
+  .main-nav .main-nav__toggle {
+    display: none;
+  }
+}
 .about-me span {
   display: block;
   margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .about-me {
+    text-align: center;
+  }
+  .about-me div {
+    margin-bottom: 40px;
+  }
 }
 .works {
   min-height: 350px;

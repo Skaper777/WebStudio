@@ -58,3 +58,37 @@
     }
   }  
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    .main-nav__list {
+      display: flex;
+
+      .main-nav__list-item {
+        padding: 14px 0; 
+        width: 33.3%;
+      }
+
+      .main-nav__link {
+        display: inline;
+        margin: 0 auto;
+        padding: 0;
+        background: none;
+        border: none;
+
+        &:hover {
+          color: @gold;
+          background: none;
+        }
+      }
+    }
+
+    .main-nav__cross-button {
+      display: none;
+    }
+  
+    .main-nav__toggle {
+      display: none;
+    }
+  }
+}
