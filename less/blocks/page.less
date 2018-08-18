@@ -5,8 +5,7 @@
   font-family: "NotoSerif-Regular", "NotoSerif-Bold", "Arial", sans-serif;
 
   .page__container {
-    position: relative;
-    width: 320px;
+    position: relative;    
     margin: 0 auto;    
     background-color: white;    
     border-radius: 15px;
@@ -27,18 +26,19 @@
     font-size: @mobile-title;
 
     &:after {
-      content: "";
+      content: "";        
       position: absolute;
       width: 30px;
       height: 1px;
       top: 34px;
-      left: 45%;
+      left: 50%;
+      margin-left: -15px;
       background: black;
     }
   }
   
   p {
-    margin: 0 20px;
+    margin: 0 4%;
   }
 
   @media (min-width: @tablet-width) {
@@ -54,12 +54,12 @@
         &:after {
           top: 41px;
           width: 40px;
-          left: 47.6%;
+          margin-left: -20px;          
         }
       }
 
       p {
-        margin: 0 6%;
+        
       }
     }
   }

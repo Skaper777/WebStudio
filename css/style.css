@@ -411,7 +411,6 @@ template {
 }
 .page .page__container {
   position: relative;
-  width: 320px;
   margin: 0 auto;
   background-color: white;
   border-radius: 15px;
@@ -434,11 +433,12 @@ template {
   width: 30px;
   height: 1px;
   top: 34px;
-  left: 45%;
+  left: 50%;
+  margin-left: -15px;
   background: black;
 }
 .page p {
-  margin: 0 20px;
+  margin: 0 4%;
 }
 @media (min-width: 768px) {
   .page {
@@ -454,15 +454,12 @@ template {
   .page .page__container h3:after {
     top: 41px;
     width: 40px;
-    left: 47.6%;
-  }
-  .page .page__container p {
-    margin: 0 6%;
+    margin-left: -20px;
   }
 }
 .button {
   background: #2c2f36;
-  width: 320px;
+  width: 100%;
   color: white;
   border: none;
   padding: 17px 0;
@@ -488,13 +485,13 @@ template {
 }
 @media (min-width: 768px) {
   .main-header {
-    background: url(../img/bg-tablet.jpg) no-repeat 50% 30%;
+    background: url(../img/bg-tablet.jpg) no-repeat 50% 50%;
     border-bottom: 2px solid #deb423;
   }
   .main-header .main-header__logo img {
     width: 100px;
     margin-top: 105px;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
   }
 }
 .main-nav {
@@ -520,7 +517,7 @@ template {
   color: white;
   width: 100%;
   border-bottom: 1px solid #deb423;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .main-nav .main-nav__list .main-nav__link:hover {
   background: #deb423;
@@ -603,8 +600,9 @@ template {
 }
 .works .works__controls {
   position: relative;
+  left: 50%;
   margin-top: 239px;
-  margin-left: 32px;
+  margin-left: -130px;
 }
 .works .works__controls .works__controls-left {
   border: none;
@@ -703,7 +701,8 @@ template {
 .slider li {
   display: block;
   position: absolute;
-  left: 35px;
+  left: 50%;
+  margin-left: -127px;
   opacity: 0;
   transition: opacity 0.5s;
   text-align: center;
@@ -785,6 +784,11 @@ template {
 }
 .footer .footer__copyright {
   text-align: center;
+}
+@media (min-width: 768px) {
+  .footer {
+    background: url(../img/texture-black.png);
+  }
 }
 .catalog {
   background: white;
