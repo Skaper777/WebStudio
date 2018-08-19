@@ -485,7 +485,8 @@ template {
 }
 @media (min-width: 768px) {
   .main-header {
-    background: url(../img/bg-tablet.jpg) no-repeat 50% 50%;
+    background: url(../img/bg-desktop.jpg) no-repeat 50% 50%;
+    background-size: 100%;
     border-bottom: 2px solid #deb423;
   }
   .main-header .main-header__logo img {
@@ -582,6 +583,44 @@ template {
   }
   .about-me div {
     margin-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .services .services__list {
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    width: 470px;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  .services .services__list .services__item {
+    position: relative;
+    text-align: start;
+    line-height: 60px;
+    width: 50%;
+    cursor: default;
+  }
+  .services .services__list .services__item:hover .services__svg {
+    fill: black;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  .services .services__list .services__item .services__span {
+    margin: 0;
+    margin-left: 30px;
+  }
+  .services .services__list .services__item .services__svg {
+    fill: #deb423;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.5s;
+  }
+  .services .services__list .services__item .services__svg:hover {
+    fill: black;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 .works {

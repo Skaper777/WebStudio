@@ -1,3 +1,44 @@
-.services {
-  
+@media (min-width: @tablet-width) {
+  .services {
+    .services__list {
+      display: flex;
+      padding: 0;
+      margin: 0 auto;
+      width: 470px;
+      list-style: none;
+      flex-wrap: wrap;      
+
+      .services__item {
+        position: relative;
+        text-align: start;
+        line-height: 60px;
+        width: 50%;
+        cursor: default;
+
+        &:hover .services__svg {
+          fill: black;
+          transform: rotate(360deg);
+        }
+
+        .services__span {
+          margin: 0;
+          margin-left: 30px;          
+        }
+
+        .services__svg {
+          fill: @gold;
+          position: absolute;
+          top: 20px;
+          left: 0;
+          transition: 0.5s;
+
+          &:hover {
+            fill: black;
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
 }
+
