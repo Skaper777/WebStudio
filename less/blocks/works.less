@@ -2,7 +2,7 @@
   min-height: 350px;
   color: white;
   background: url(../img/texture-black.png);
-  padding-top: 1px;
+  padding-top: 0.1px;
   
   .works__title {
     &:after {
@@ -94,5 +94,11 @@
     margin: 0 auto;
     margin-top: 10px;
     padding-bottom: 20px; 
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .works {
+    min-height: 550px;
   }
 }

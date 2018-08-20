@@ -447,6 +447,9 @@ template {
   .page .page__container {
     width: 768px;
   }
+  .page .page__container ul {
+    padding: 0;
+  }
   .page .page__container h3 {
     font-size: 22px;
     margin: 30px 0;
@@ -485,7 +488,7 @@ template {
 }
 @media (min-width: 768px) {
   .main-header {
-    background: url(../img/bg-desktop.jpg) no-repeat 50% 50%;
+    background: url(../img/back.jpg) no-repeat 50% 50%;
     background-size: 100%;
     border-bottom: 2px solid #deb423;
   }
@@ -585,6 +588,9 @@ template {
     margin-bottom: 40px;
   }
 }
+.services .services__svg {
+  display: none;
+}
 @media (min-width: 768px) {
   .services .services__list {
     display: flex;
@@ -611,6 +617,7 @@ template {
     margin-left: 30px;
   }
   .services .services__list .services__item .services__svg {
+    display: block;
     fill: #deb423;
     position: absolute;
     top: 20px;
@@ -623,11 +630,34 @@ template {
             transform: rotate(360deg);
   }
 }
+@media (min-width: 768px) {
+  .abilities__list {
+    list-style: none;
+    padding: 0;
+  }
+  .abilities__list li {
+    margin-top: 40px;
+    cursor: default;
+  }
+  .abilities__list li:hover svg {
+    fill: #deb423;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  .abilities__list svg {
+    display: block;
+    margin: 0 auto;
+    fill: darkgray;
+    width: 40px;
+    height: 40px;
+    transition: 0.2s;
+  }
+}
 .works {
   min-height: 350px;
   color: white;
   background: url(../img/texture-black.png);
-  padding-top: 1px;
+  padding-top: 0.1px;
 }
 .works .works__title:after {
   background: white;
@@ -711,6 +741,11 @@ template {
   margin-top: 10px;
   padding-bottom: 20px;
 }
+@media (min-width: 768px) {
+  .works {
+    min-height: 550px;
+  }
+}
 .slider .showing {
   opacity: 1;
 }
@@ -764,6 +799,11 @@ template {
 .slider span {
   display: block;
   margin-top: 14px;
+}
+@media (min-width: 768px) {
+  .slider .showing img {
+    height: 400px;
+  }
 }
 .certificates {
   padding-bottom: 10px;
@@ -826,7 +866,7 @@ template {
 }
 @media (min-width: 768px) {
   .footer {
-    background: url(../img/texture-black.png);
+    background: url(../img/footer.jpg);
   }
 }
 .catalog {
