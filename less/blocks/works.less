@@ -1,5 +1,5 @@
 .works {
-  min-height: 350px;
+  min-height: 500px;
   color: white;
   background: url(../img/texture-black.png);
   padding-top: 0.1px;
@@ -19,6 +19,7 @@
   .works__controls {
     position: relative;
     left: 50%;
+    top: 100px;
     margin-top: 239px;    
     margin-left: -130px;    
     
@@ -92,13 +93,14 @@
     display: block;
     width: 100px;
     margin: 0 auto;
-    margin-top: 10px;
-    padding-bottom: 20px; 
+    margin-top: 115px;    
   }
 }
 
 @media (min-width: @tablet-width) {
   .works {
-    min-height: 550px;
+    .works__controls {
+      top: 110px;
+    }
   }
 }

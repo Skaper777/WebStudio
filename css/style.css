@@ -630,6 +630,9 @@ template {
             transform: rotate(360deg);
   }
 }
+.abilities__list svg {
+  display: none;
+}
 @media (min-width: 768px) {
   .abilities__list {
     list-style: none;
@@ -654,7 +657,7 @@ template {
   }
 }
 .works {
-  min-height: 350px;
+  min-height: 500px;
   color: white;
   background: url(../img/texture-black.png);
   padding-top: 0.1px;
@@ -670,6 +673,7 @@ template {
 .works .works__controls {
   position: relative;
   left: 50%;
+  top: 100px;
   margin-top: 239px;
   margin-left: -130px;
 }
@@ -738,12 +742,11 @@ template {
   display: block;
   width: 100px;
   margin: 0 auto;
-  margin-top: 10px;
-  padding-bottom: 20px;
+  margin-top: 115px;
 }
 @media (min-width: 768px) {
-  .works {
-    min-height: 550px;
+  .works .works__controls {
+    top: 110px;
   }
 }
 .slider .showing {
@@ -755,7 +758,7 @@ template {
   top: 7px;
   left: 0;
   width: 250px;
-  height: 200px;
+  height: 300px;
   background: black;
   opacity: 0;
   cursor: pointer;
@@ -764,7 +767,7 @@ template {
   content: "Подробней";
   font-weight: bold;
   position: absolute;
-  top: 85px;
+  top: 130px;
   left: 65px;
   width: 120px;
   border: 1px solid #deb423;
@@ -778,32 +781,30 @@ template {
   left: 50%;
   margin-left: -127px;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 1s;
   text-align: center;
 }
 .slider img {
   display: block;
   margin-top: 7px;
   width: 250px;
-  height: 200px;
+  height: 300px;
 }
 .slider .slider__nerds {
-  background: url(../img/nerds.jpg) no-repeat;
+  background: url(../img/nerds.png) no-repeat;
+  background-size: 100%;
 }
 .slider .slider__sedona {
-  background: url(../img/sedona.jpg) no-repeat;
+  background: url(../img/sedona.png) no-repeat;
+  background-size: 100%;
 }
 .slider .slider__keks {
-  background: url(../img/keksobooking.jpg) no-repeat;
+  background: url(../img/keks.png) no-repeat 50%;
+  background-size: cover;
 }
 .slider span {
   display: block;
   margin-top: 14px;
-}
-@media (min-width: 768px) {
-  .slider .showing img {
-    height: 400px;
-  }
 }
 .certificates {
   padding-bottom: 10px;
