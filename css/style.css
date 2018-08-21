@@ -745,40 +745,26 @@ template {
   margin-top: 115px;
 }
 @media (min-width: 768px) {
-  .works .works__controls {
-    top: 110px;
+  .works {
+    padding-bottom: 40px;
   }
-}
-.slider .showing {
-  opacity: 1;
-}
-.slider .showing .slider__slide-overlay {
-  z-index: 100;
-  position: absolute;
-  top: 7px;
-  left: 0;
-  width: 250px;
-  height: 300px;
-  background: black;
-  opacity: 0;
-  cursor: pointer;
-}
-.slider .showing .slider__slide-overlay:after {
-  content: "Подробней";
-  font-weight: bold;
-  position: absolute;
-  top: 130px;
-  left: 65px;
-  width: 120px;
-  border: 1px solid #deb423;
-}
-.slider .showing .slider__slide-overlay:hover {
-  opacity: 0.8;
+  .works .works__controls {
+    top: 160px;
+    margin-left: -153px;
+  }
+  .works .works__controls .works__controls-right {
+    margin-left: 260px;
+  }
+  .works .works__link {
+    margin-top: 175px;
+  }
 }
 .slider li {
   display: block;
   position: absolute;
   left: 50%;
+  width: 250px;
+  height: 320px;
   margin-left: -127px;
   opacity: 0;
   transition: opacity 1s;
@@ -787,7 +773,7 @@ template {
 .slider img {
   display: block;
   margin-top: 7px;
-  width: 250px;
+  width: inherit;
   height: 300px;
 }
 .slider .slider__nerds {
@@ -805,6 +791,49 @@ template {
 .slider span {
   display: block;
   margin-top: 14px;
+}
+.slider .showing {
+  opacity: 1;
+}
+.slider .showing .slider__slide-overlay {
+  z-index: 100;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: inherit;
+  height: 300px;
+  background: black;
+  opacity: 0;
+  cursor: pointer;
+}
+.slider .showing .slider__slide-overlay:after {
+  content: "Подробней";
+  position: absolute;
+  top: 130px;
+  left: 65px;
+  width: 120px;
+  border: 1px solid #deb423;
+}
+.slider .showing .slider__slide-overlay:hover {
+  opacity: 0.8;
+}
+@media (min-width: 768px) {
+  .slider li {
+    width: 300px;
+    height: 420px;
+    margin-left: -150px;
+  }
+  .slider img {
+    height: 350px;
+  }
+  .slider .showing .slider__slide-overlay {
+    width: inherit;
+    height: 350px;
+  }
+  .slider .showing .slider__slide-overlay:after {
+    top: 160px;
+    left: 90px;
+  }
 }
 .certificates {
   padding-bottom: 10px;
