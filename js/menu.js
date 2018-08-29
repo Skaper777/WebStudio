@@ -1,9 +1,9 @@
 'use strict';
 
 (function () {
-  var menuOpenButton = document.querySelector('.main-nav__toggle');
-  var menu = document.querySelector('.main-nav__list');
-  var menuCloseButton = document.querySelector('.main-nav__cross-button');
+  var menuOpenButton = document.querySelector('.mobile-nav__toggle');
+  var menu = document.querySelector('.mobile-nav__list');
+  var menuCloseButton = document.querySelector('.mobile-nav__cross-button');
   
   var menuOpen = function () {
     menu.style.display = 'block';

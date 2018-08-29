@@ -485,6 +485,7 @@ template {
 .main-header .main-header__logo img {
   width: 150px;
   margin-top: 65px;
+  margin-left: calc(50% - 75px);
 }
 @media (min-width: 768px) {
   .main-header {
@@ -496,15 +497,16 @@ template {
     width: 100px;
     margin-top: 105px;
     margin-bottom: 200px;
+    margin-left: calc(50% - 50px);
   }
 }
-.main-nav {
+.mobile-nav {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.main-nav .main-nav__list {
+.mobile-nav .mobile-nav__list {
   position: relative;
   display: none;
   width: 100%;
@@ -513,7 +515,7 @@ template {
   margin: 0;
   padding: 0;
 }
-.main-nav .main-nav__list .main-nav__link {
+.mobile-nav .mobile-nav__list .mobile-nav__link {
   display: block;
   padding: 14px 0;
   text-decoration: none;
@@ -523,15 +525,15 @@ template {
   border-bottom: 1px solid #deb423;
   transition: 0.2s;
 }
-.main-nav .main-nav__list .main-nav__link:hover {
+.mobile-nav .mobile-nav__list .mobile-nav__link:hover {
   background: #deb423;
 }
-.main-nav .main-nav__list .main-nav__list-button {
+.mobile-nav .mobile-nav__list .mobile-nav__list-button {
   position: absolute;
   top: 15px;
   right: 20px;
 }
-.main-nav .main-nav__list .main-nav__cross-button {
+.mobile-nav .mobile-nav__list .mobile-nav__cross-button {
   padding: 0;
   width: 23px;
   height: 23px;
@@ -540,19 +542,36 @@ template {
   border: none;
   cursor: pointer;
 }
-.main-nav .main-nav__list .main-nav__cross-icon {
+.mobile-nav .mobile-nav__list .mobile-nav__cross-icon {
   position: absolute;
   top: 0;
   left: 0;
   fill: white;
   transition: 0.2s;
 }
-.main-nav .main-nav__list .main-nav__cross-icon:hover {
+.mobile-nav .mobile-nav__list .mobile-nav__cross-icon:hover {
   fill: #deb423;
 }
 @media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+.main-nav {
+  display: none;
+}
+@media (min-width: 768px) {
+  .main-nav {
+    display: block;
+    width: 100%;
+  }
   .main-nav .main-nav__list {
     display: flex;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
   }
   .main-nav .main-nav__list .main-nav__list-item {
     padding: 14px 0;
@@ -560,6 +579,7 @@ template {
   }
   .main-nav .main-nav__list .main-nav__link {
     display: inline;
+    color: white;
     margin: 0 auto;
     padding: 0;
     background: none;

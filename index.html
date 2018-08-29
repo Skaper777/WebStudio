@@ -5,7 +5,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/animate.css">    
     <title>Local Web Studio</title>
   </head>
 
@@ -14,30 +15,43 @@
     <div class="page__container">
 
       <header class="main-header">
-        <nav class="main-nav">
-          <button class="main-nav__toggle button" type="button" title="Открыть меню">Меню</button>
-          <ul class="main-nav__list">
-            <li class="main-nav__list-button">
-              <button class="main-nav__cross-button" type="button" title="Закрыть меню">
-                <svg class="main-nav__cross-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+        <nav class="mobile-nav">
+          <button class="mobile-nav__toggle button" type="button">Меню</button>
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__list-button">
+              <button class="mobile-nav__cross-button" type="button">
+                <svg class="mobile-nav__cross-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
                   <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "></polygon>
                 </svg>
               </button>
             </li>
-            <li class="main-nav__list-item">
-              <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+            <li class="mobile-nav__list-item">
+              <a class="mobile-nav__link" href="index.html">Главная</a>
             </li>            
-            <li class="main-nav__list-item">
+            <li class="mobile-nav__list-item">
+              <a class="mobile-nav__link" href="works.html">Работы</a>
+            </li>
+            <li class="mobile-nav__list-item">
+              <a class="mobile-nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>          
+        </nav>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item wow bounceInLeft">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>            
+            <li class="main-nav__list-item wow bounceInDown">
               <a class="main-nav__link" href="works.html">Работы</a>
             </li>
-            <li class="main-nav__list-item">
+            <li class="main-nav__list-item wow bounceInRight">
               <a class="main-nav__link" href="#contacts">Контакты</a>
             </li>
           </ul>
-          <div class="main-header__logo">
-            <img src="img/logo-mobile.png">
-          </div>
         </nav>
+        <div class="main-header__logo">
+          <img class="wow bounceInUp" src="img/logo-mobile.png">
+        </div>
       </header>
 
       <section class="about-me">
@@ -1051,7 +1065,11 @@
 
     <script src="js/menu.js"></script>
     <script src="js/slider.js"></script>
-    <script src="js/popup.js"></script>
+    <script src="js/popup.js"></script>    
+    <script src="js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
   </body>
   
