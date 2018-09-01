@@ -1,0 +1,97 @@
+.form {
+  span {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .form__text {
+    text-align: center;
+  }
+  .form__fieldset {
+    display: flex;
+    width: 290px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: none;
+    background: url(../img/texture-black.png);
+
+    .form__input {
+      z-index: 3;
+      margin: 20px auto;     
+      width: 200px;
+      padding: 10px; 
+      border: none;
+      background: none;
+      border-bottom: 1px solid white;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:focus,
+      &:hover {
+        border-bottom: 1px solid @gold;
+      }
+
+      &:focus + .form__input-text {
+        opacity: 0;
+      }
+    }
+
+    .form__input-text {
+      z-index: 2;           
+      position: absolute;      
+      left: 45px;
+      top: 26px;
+      color: white;
+      transition: 0.2s;
+
+      &:nth-of-type(2) {
+        top: 80px;
+      }
+      &:last-of-type {
+        top: 136px;
+      }
+    }    
+  }
+
+  .form__button {
+    display: block;
+    width: 308px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    padding: 0 10%;
+
+    .form__fieldset {
+      width: 594px;
+      .form__input {
+        padding: 15px;
+        width: 400px;
+
+        &:last-of-type {
+          margin-bottom: 40px;
+        }
+      }
+
+      .form__input-text {
+        top: 39px;
+        left: 110px;
+
+        &:nth-of-type(2) {
+          top: 105px;
+        }
+        &:last-of-type {
+          top: 172px;
+        }
+      }
+    }
+    
+    .form__button {
+      width: 100%;
+    }
+  }
+}
