@@ -608,6 +608,15 @@ template {
     margin-bottom: 40px;
   }
 }
+.services {
+  background: url(../img/texture-black.png);
+  color: white;
+  padding: 30px 0;
+  padding-top: 0.1px;
+}
+.services h3::after {
+  background: white;
+}
 .services .services__svg {
   display: none;
 }
@@ -628,7 +637,7 @@ template {
     cursor: default;
   }
   .services .services__list .services__item:hover .services__svg {
-    fill: black;
+    fill: white;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
@@ -640,14 +649,9 @@ template {
     display: block;
     fill: #deb423;
     position: absolute;
-    top: 20px;
-    left: 0;
+    top: 18px;
+    left: -5px;
     transition: 0.5s;
-  }
-  .services .services__list .services__item .services__svg:hover {
-    fill: black;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
   }
 }
 .abilities__list svg {
@@ -671,8 +675,8 @@ template {
     display: block;
     margin: 0 auto;
     fill: darkgray;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     transition: 0.2s;
   }
 }
@@ -816,7 +820,7 @@ template {
   opacity: 1;
 }
 .slider .showing .slider__slide-overlay {
-  z-index: 100;
+  z-index: 10;
   position: absolute;
   top: 7px;
   left: 0;
@@ -916,7 +920,12 @@ template {
 }
 @media (min-width: 768px) {
   .footer {
+    padding: 0 50px;
+    padding-bottom: 30px;
     background: url(../img/footer.jpg);
+  }
+  .footer .footer__social {
+    margin-bottom: 20px;
   }
 }
 .catalog {
@@ -939,6 +948,7 @@ template {
   width: 100%;
 }
 .popup .popup__overlay {
+  z-index: 102;
   opacity: 0.5;
   background: black;
   height: 100%;
@@ -946,9 +956,10 @@ template {
 }
 .popup .popup__close {
   position: fixed;
-  top: 25%;
+  z-index: 103;
+  top: 10%;
   padding: 0;
-  margin-left: 290px;
+  left: 60%;
   width: 23px;
   height: 23px;
   background: transparent;
@@ -966,10 +977,25 @@ template {
 .popup .popup__close .popup__cross-icon:hover {
   fill: #deb423;
 }
+.popup .popup__image-wrapper {
+  position: fixed;
+  z-index: 600;
+  width: 320px;
+  top: 20%;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
 .popup img {
   display: none;
   z-index: 600;
-  top: 30%;
-  position: fixed;
   width: 320px;
+}
+@media (min-width: 768px) {
+  .popup .popup__image-wrapper {
+    width: 470px;
+  }
+  .popup img {
+    width: 470px;
+  }
 }

@@ -3,9 +3,10 @@
   position: absolute;
   top: 0;  
   height: 100%;
-  width: 100%;
+  width: 100%;  
 
   .popup__overlay {
+    z-index: 102;
     opacity: 0.5;
     background: black;
     height: 100%;
@@ -14,9 +15,10 @@
 
   .popup__close {
     position: fixed;
-    top: 25%;
+    z-index: 103;
+    top: 10%;
     padding: 0;
-    margin-left: 290px;
+    left: 60%;
     width: 23px;
     height: 23px;
     background: transparent;
@@ -37,11 +39,31 @@
     }
   }
 
-  img {
-    display: none;    
-    z-index: 600;    
-    top: 30%;
+  .popup__image-wrapper {
     position: fixed;
+    z-index: 600;
+    width: 320px;
+    top: 20%;
+    margin: auto;
+    left: 0;
+    right: 0; 
+  }
+
+  img {
+    display: none;      
+    z-index: 600;    
     width: 320px;    
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .popup {
+    .popup__image-wrapper {
+      width: 470px;
+    }
+
+    img {
+      width: 470px;
+    }
   }
 }

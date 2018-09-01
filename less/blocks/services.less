@@ -1,4 +1,15 @@
 .services {
+  background: url(../img/texture-black.png);
+  color: white;
+  padding: 30px 0;
+  padding-top: 0.1px;
+  
+  h3 {
+    &::after {
+      background: white;
+    }
+  }
+  
   .services__svg{
     display: none;
   }  
@@ -12,7 +23,7 @@
       margin: 0 auto;
       width: 470px;
       list-style: none;
-      flex-wrap: wrap;      
+      flex-wrap: wrap;               
 
       .services__item {
         position: relative;
@@ -22,7 +33,7 @@
         cursor: default;
 
         &:hover .services__svg {
-          fill: black;
+          fill: white;
           transform: rotate(360deg);
         }
 
@@ -35,14 +46,9 @@
           display: block;
           fill: @gold;
           position: absolute;
-          top: 20px;
-          left: 0;
+          top: 18px;
+          left: -5px;
           transition: 0.5s;
-
-          &:hover {
-            fill: black;
-            transform: rotate(360deg);
-          }
         }
       }
     }
