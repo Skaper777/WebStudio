@@ -93,7 +93,8 @@
     display: block;
     width: 100px;
     margin: 0 auto;
-    margin-top: 115px;    
+    margin-top: 115px;
+    transition: 0.3s;    
   }
 }
 
@@ -112,6 +113,29 @@
 
     .works__link {
       margin-top: 175px;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .works {   
+    padding-bottom: 60px;
+
+    .works__controls {
+      top: 280px;
+      margin-left: -175px;
+
+      .works__controls-right {
+        margin-left: 301px;
+      }
+    }
+
+    .works__link {
+      margin-top: 320px;
     }
   }
 }

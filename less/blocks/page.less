@@ -1,6 +1,8 @@
 .page {
   font-size: @mobile-font-size;
-  min-width: 320px;
+  min-width: 320px;  
+  height: 100%;
+  overflow-x: hidden;
   line-height: 25px;
   font-family: "NotoSerif-Regular", "NotoSerif-Bold", "Arial", sans-serif;
 
@@ -8,8 +10,7 @@
     position: relative;    
     margin: 0 auto;    
     background-color: white;    
-    border-radius: 15px;
-    border: 3px solid black;
+    border-radius: 15px;    
   }
   
   a {
@@ -45,8 +46,6 @@
     font-size: @tablet-font-size;
     
     .page__container {
-      width: 768px;
-
       ul {
         padding: 0;
       }
@@ -59,6 +58,21 @@
           top: 41px;
           width: 40px;
           margin-left: -20px;          
+        }
+      }
+    }
+  }
+  
+  @media (min-width: @desktop-width) {
+    font-size: @desktop-font-size;
+
+    .page__container {
+      h3 {
+        font-size: @desktop-title;
+        margin: 50px 0;
+
+        &::after {
+          top: 53px;
         }
       }
     }

@@ -16,3 +16,28 @@
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .certificates {
+
+    .certificates__text {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .certificates__list {
+      min-width: 1200px;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .certificates__image {
+      width: 170px;
+      box-shadow: 0 10px 6px -6px #777;
+
+      &:hover {
+        box-shadow: 1px 1px 10px grey;
+      }
+    }
+  }
+}

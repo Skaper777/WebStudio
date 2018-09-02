@@ -45,10 +45,30 @@
         .services__svg {
           display: block;
           fill: @gold;
+          width: 25px;
           position: absolute;
           top: 18px;
           left: -5px;
           transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .services {
+    .services__list {
+      width: 1200px;      
+
+      .services__item {
+        width: 25%;
+        line-height: 100px;        
+
+        .services__svg {
+          width: 35px;
+          top: 32px;
+          left: -10px;
         }
       }
     }

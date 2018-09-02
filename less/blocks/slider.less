@@ -94,3 +94,28 @@
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .slider {
+    li {
+      width: 350px;
+      height: 450px; 
+      margin-left: -175px;      
+    }
+
+    img {
+      height: 450px;     
+    }
+
+    .showing {
+      .slider__slide-overlay {        
+        height: inherit;
+
+        &:after {
+          top: 230px;
+          left: 120px;
+        }
+      }
+    }
+  }
+}

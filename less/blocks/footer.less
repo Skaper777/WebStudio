@@ -55,12 +55,50 @@
 
 @media (min-width: @tablet-width) {
   .footer {
-    padding: 0 50px;
-    padding-bottom: 30px;
     background: url(../img/footer.jpg);
 
-    .footer__social {
-      margin-bottom: 20px;
+    .footer__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 700px;
+      margin: 0 auto;
+      padding-bottom: 30px;      
+  
+      .footer__title {
+        width: 100%;      
+      }
+  
+      .footer__contacts {
+        width: 400px;        
+      }
+  
+      .footer__social {
+        width: 200px;
+        margin-bottom: 20px;
+      }
+  
+      .footer__copyright {
+        margin-top: 30px;
+        width: 100%;
+      }
     }
+  }    
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    .footer__wrapper {
+      min-width: 1200px;
+      max-width: 1440px;
+
+      .footer__contacts-item {
+        margin-bottom: 10px;
+      }
+
+      .footer__social {
+        margin-bottom: 60px;
+      }
+    }    
   }
 }

@@ -91,7 +91,35 @@
     }
     
     .form__button {
-      width: 100%;
+      width: 615px;
     }
   }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    .form__text {
+      position: relative;
+
+      span {
+        margin-bottom: 40px;
+      }
+
+      &::after {
+        content: "";        
+        position: absolute;
+        width: 40px;
+        height: 1px;
+        top: 190px;
+        left: 50%;
+        margin-left: -20px;
+        background: black;
+      }
+    }
+
+    .form__button {
+      width: 618px;
+      margin-bottom: 50px;
+    }
+  }  
 }

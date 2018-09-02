@@ -16,9 +16,9 @@
   .popup__close {
     position: fixed;
     z-index: 103;
-    top: 10%;
+    top: 0;
     padding: 0;
-    left: 60%;
+    left: 70%;
     width: 23px;
     height: 23px;
     background: transparent;
@@ -43,14 +43,14 @@
     position: fixed;
     z-index: 600;
     width: 320px;
-    top: 20%;
+    top: 10%;
     margin: auto;
     left: 0;
-    right: 0; 
+    right: 50px; 
   }
 
   img {
-    display: none;      
+    display: none;        
     z-index: 600;    
     width: 320px;    
   }
@@ -64,6 +64,23 @@
 
     img {
       width: 470px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .popup {
+    .popup__close {
+      left: 65%;
+      top: 2%;
+    }
+
+    .popup__image-wrapper {
+      right: 140px;
+    }
+
+    img {
+      width: 600px;      
     }
   }
 }
