@@ -420,9 +420,6 @@ template {
 .page a {
   text-decoration: none;
 }
-.page ul {
-  padding-right: 20px;
-}
 .page h3 {
   position: relative;
   text-align: center;
@@ -670,6 +667,10 @@ template {
   padding: 30px 0;
   padding-top: 0.1px;
 }
+.services .services__list {
+  width: 200px;
+  margin: 0 auto;
+}
 .services h3::after {
   background: white;
 }
@@ -908,15 +909,19 @@ template {
   height: 300px;
 }
 .slider .slider__nerds {
-  background: url(../img/nerds.png) no-repeat;
+  background: url(../img/nerds.jpg) no-repeat;
   background-size: 100%;
 }
 .slider .slider__sedona {
-  background: url(../img/sedona.png) no-repeat;
+  background: url(../img/sedona.jpg) no-repeat;
   background-size: 100%;
 }
 .slider .slider__keks {
-  background: url(../img/keks.png) no-repeat 50%;
+  background: url(../img/keks.jpg) no-repeat 50%;
+  background-size: cover;
+}
+.slider .slider__setters {
+  background: url(../img/setters.jpg) no-repeat 50%;
   background-size: cover;
 }
 .slider span {
@@ -1164,6 +1169,7 @@ template {
 @media (min-width: 768px) {
   .footer {
     background: url(../img/footer.jpg);
+    border-top: 2px solid #deb423;
   }
   .footer .footer__wrapper {
     display: flex;
@@ -1189,6 +1195,9 @@ template {
   }
 }
 @media (min-width: 1200px) {
+  .footer {
+    border-top: 3px solid #deb423;
+  }
   .footer .footer__wrapper {
     min-width: 1200px;
     max-width: 1440px;
@@ -1202,6 +1211,55 @@ template {
 }
 .catalog {
   background: white;
+}
+.sites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+.sites .sites__title {
+  text-align: center;
+  margin-top: 5px;
+  width: 100%;
+}
+.sites .sites__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.sites .sites__item .sites__img {
+  width: 200px;
+  box-shadow: 7px 7px 6px -6px #777;
+  transition: 0.3s;
+}
+.sites .sites__item .sites__img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  box-shadow: none;
+}
+.sites .sites__item span {
+  width: 200px;
+  text-align: center;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .sites {
+    width: 599px;
+    margin: 0 auto;
+    background: url(../img/texture-black.png);
+    color: white;
+    box-shadow: 10px 10px 5px 2px white;
+  }
+  .sites h4 {
+    padding: 15px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .sites {
+    width: 1200px;
+  }
 }
 .link {
   display: block;

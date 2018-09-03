@@ -33,6 +33,9 @@
             <li class="mobile-nav__list-item">
               <a class="mobile-nav__link" href="#contacts">Контакты</a>
             </li>
+            <li class="mobile-nav__list-item wow bounceInRight">
+              <a class="mobile-nav__link" href="#form">Заказать</a>
+            </li>
           </ul>          
         </nav>
         <nav class="main-nav">
@@ -54,30 +57,55 @@
             <li class="main-nav__list-item">
               <a class="main-nav__link" href="#contacts">Контакты</a>
             </li>
+            <li class="main-nav__list-item wow bounceInRight">
+              <a class="main-nav__link" href="#form">Заказать</a>
+            </li>
           </ul>          
         </nav>        
       </header>      
 
       <section class="catalog">
         <h3 class="catalog__title">Наши работы</h3>
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <img class="catalog__image">
+        <ul class="catalog__list sites">
+          <h4 class="sites__title">Сайты</h4>
+          <li class="sites__item">                
+            <img class="sites__img" src="img/nerds.jpg">                         
             <span>Учебный проект "Nerds".</span>
           </li>
-          <li class="catalog__item">
-            <img class="catalog__image">
+          <li class="sites__item">
+            <img class="sites__img" src="img/sedona.jpg">
             <span>Учебный проект "Sedona".</span>
           </li>
-          <li class="catalog__item">
-            <img class="catalog__image">
+          <li class="sites__item">
+            <img class="sites__img" src="img/keks.jpg">
             <span>Учебный проект "Кексобукинг".</span>
           </li>
-        </ul>
+          <li class="sites__item">
+            <img class="sites__img" src="img/setters.jpg">
+            <span>Тестовое задание "Setters".</span>
+          </li>
+        </ul>        
       </section>
       
-      <section class="order">
-
+      <section class="form" id="form">
+        <h3 class="form__title">Напишите нам</h3>
+        <p class="form__text">
+          <span>Почему именно Local Web Studio?</span>
+          <span>Потому мы относимся к своей работе максимально ответственно, с максимальной самоотдачей и невероятной мотивацией.</span>
+          <span>Для нас главное это наши клиенты и реализация их идей.</span><br>          
+          <span>Закажите у нас работу, просто заполнив поля ниже.</span>
+        </p>
+        <form method="POST">
+          <fieldset class="form__fieldset">
+            <input class="form__input" type="text" required="">
+            <span class="form__input-text">Имя</span>
+            <input class="form__input" type="tel" required="">
+            <span class="form__input-text">Телефон</span>
+            <input class="form__input" type="email" required="">
+            <span class="form__input-text">E-mail</span>
+          </fieldset>
+          <button class="form__button button" type="submit">Отправить</button>
+        </form>
       </section>
 
       <footer class="footer">

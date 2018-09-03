@@ -1,0 +1,56 @@
+.sites {  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;  
+  list-style: none;
+  padding: 0;
+  
+  .sites__title {
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .sites__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+
+    .sites__img {
+      width: 200px;
+      box-shadow: 7px 7px 6px -6px #777;
+      transition: 0.3s;
+      
+      &:hover {
+        transform: scale(1.2);
+        box-shadow: none;
+      }
+    }
+
+    span {
+      width: 200px;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }  
+}
+
+@media (min-width: @tablet-width) {
+  .sites {
+    width: 599px;
+    margin: 0 auto;
+    background: url(../img/texture-black.png);
+    color: white;
+    box-shadow: 10px 10px 5px 2px white;
+    
+
+    h4 {
+      padding: 15px 0;
+    }
+  }
+}
+@media (min-width: @desktop-width) {
+  .sites {
+    width: 1200px;    
+  }
+}
