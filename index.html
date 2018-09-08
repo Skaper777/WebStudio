@@ -1080,14 +1080,11 @@
           <span class="wow bounceInRight">Для нас главное это наши клиенты и реализация их идей.</span><br>          
           <span class="wow bounceInLeft">Закажите у нас работу, просто заполнив поля ниже.</span>
         </p>
-        <form method="POST">
+        <form method="POST" enctype="multipart/form-data">
           <fieldset class="form__fieldset wow bounceInUp">
-            <input class="form__input" type="text" required="">
-            <span class="form__input-text">Имя</span>
-            <input class="form__input" type="tel" required="">
-            <span class="form__input-text">Телефон</span>
-            <input class="form__input" type="email" required="">
-            <span class="form__input-text">E-mail</span>
+            <input class="form__input" type="text" placeholder="Имя" required="">            
+            <input class="form__input" type="tel" placeholder="Телефон" required="">            
+            <input class="form__input" type="email" placeholder="Email" required="">            
           </fieldset>
           <button class="form__button button wow bounceInUp" type="submit">Отправить</button>
         </form>
@@ -1253,10 +1250,17 @@
           <img class="popup__image" src="img/keks.jpg">
           <img class="popup__image" src="img/setters.jpg">
         </div>
-      </div>      
+      </div>
+      
+      <div class="succes-message">
+        <p>
+          Ураааа!!!!!!!!!!!!!!!!!!!
+        </p>
+      </div>
 
     </div>
 
+    <script src="js/backend.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/popup.js"></script>    
