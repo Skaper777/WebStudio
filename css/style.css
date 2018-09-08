@@ -407,7 +407,6 @@ template {
   font-size: 12px;
   min-width: 320px;
   height: 100%;
-  overflow-x: hidden;
   line-height: 25px;
   font-family: "NotoSerif-Regular", "NotoSerif-Bold", "Arial", sans-serif;
 }
@@ -784,10 +783,10 @@ template {
 }
 .works .works__controls {
   position: relative;
-  left: 50%;
+  width: 260px;
   top: 100px;
+  margin: 0 auto;
   margin-top: 239px;
-  margin-left: -130px;
 }
 .works .works__controls .works__controls-left {
   border: none;
@@ -863,7 +862,7 @@ template {
   }
   .works .works__controls {
     top: 160px;
-    margin-left: -153px;
+    width: 310px;
   }
   .works .works__controls .works__controls-right {
     margin-left: 260px;
@@ -882,7 +881,7 @@ template {
   }
   .works .works__controls {
     top: 280px;
-    margin-left: -175px;
+    width: 350px;
   }
   .works .works__controls .works__controls-right {
     margin-left: 301px;
